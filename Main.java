@@ -13,6 +13,8 @@ public class Main {
         DogWalker josh = new DogWalker(3, tobey);
         System.out.println("$" + josh.dogWalkShift(7, 10) + ".00 earned.");
         System.out.println(tobey);
+        tobey.totalMoney += 2000;
+        System.out.println("The company has $" + tobey.totalMoney + ".00, good job.");
 
 
 

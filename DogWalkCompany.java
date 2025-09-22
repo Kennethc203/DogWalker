@@ -27,5 +27,5 @@ public class DogWalkCompany
        return hour;
    }
    public void updateDogs(int hour, int numberDogsWalked) {schedule[hour] -= numberDogsWalked;}
-
+    public int totalMoney;
 }

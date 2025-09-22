@@ -24,6 +24,7 @@ public class DogWalker {
             if (dogs == maxDogs || startHour >= 9 && startHour <= 17) {pay += 3;}
             startHour ++;
         }
+        company.totalMoney += pay;
         return pay;
     }
 }
