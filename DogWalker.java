@@ -17,14 +17,13 @@ public class DogWalker {
     }
     public int dogWalkShift(int startHour, int endHour){
         int pay = 0;
-        int dogs = 0
+        int dogs = 0;
         while(startHour <= endHour){
-            dogs = walkDogs(startHour) * 3;
+            dogs = walkDogs(startHour);
             pay += dogs * 5;
-            if (dogs == maxDogs && startHour < 17)
-            startHour += 1;
+            if (dogs == maxDogs || startHour >= 9 && startHour <= 17) {pay += 3;}
+            startHour ++;
         }
-
-
+        return pay;
     }
 }
