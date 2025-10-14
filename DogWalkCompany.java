@@ -26,6 +26,10 @@ public class DogWalkCompany
        schedule[hour] = dogs;
        return hour;
    }
+   public int addDoggies(int hour, int dogs){
+       schedule[hour] = dogs;
+       return hour;
+   }
    public void updateDogs(int hour, int numberDogsWalked) {schedule[hour] -= numberDogsWalked;}
     public int totalMoney;
 }

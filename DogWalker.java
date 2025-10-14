@@ -6,7 +6,7 @@ public class DogWalker {
 
     }
     private int maxDogs;
-    private DogWalkCompany company;
+    private final DogWalkCompany company;
     public int walkDogs(int hour)
     {
         int dogs = company.numAvailableDogs(hour);
